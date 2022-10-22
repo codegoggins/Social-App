@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    .card{
+        width: 70%;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 300px;
+        overflow: hidden;
+
+        .left{
+            flex:1;
+            background: linear-gradient(rgba(39,11,95,0.5),rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/3585089/pexels-photo-3585089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+            center
+            ;
+            background-size: cover;
+            padding: 30px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+
+            h1{
+                font-size: 80px;
+                line-height: 80px;
+            }
+            p{
+                font-size: 20px;
+            }
+            span{
+                font-size: 18px;
+            }
+            button{
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: #4e54c8;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+
+        .right{
+            flex:1;
+            padding: 50px;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+            
+            h1{
+                color: #555;
+                font-size: 50px;
+            }
+            
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid #555;
+                    padding: 20px 10px;
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color:#8f94fb;
+                    font-size: 16px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
